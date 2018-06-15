@@ -12,9 +12,9 @@ public class ReviewRepository {
 	private Map<Long, Review> reviewRepository = new HashMap<Long, Review>();
 	
 	public ReviewRepository() {
-		Review reviewOne = new Review(111L, "The Flash", "URL HERE", "super hero", "content");
-		Review reviewTwo = new Review(222L, "Ronja, the Robber's Daughter", "URL HERE", "anime", "content");
-		Review reviewThree = new Review(333L, "The Office", "URL HERE", "comedy", "content");
+		Review reviewOne = new Review(111L, "The Flash", "/images/TheFlash.jpg", "Superhero", "Great show to watch with the kids.");
+		Review reviewTwo = new Review(222L, "Ronja, the Robber's Daughter", "/images/Ronja.jpg", "Anime", "My 7-year old son loves it.");
+		Review reviewThree = new Review(333L, "The Office", "/images/TheOffice.jpg", "Comedy", "I like to decompress to weird humor.");
 		
 		this.addReview(reviewOne);
 		this.addReview(reviewTwo);
