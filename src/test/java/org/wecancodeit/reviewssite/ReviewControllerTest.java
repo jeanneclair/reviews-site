@@ -45,7 +45,7 @@ public class ReviewControllerTest {
 		mvc.perform(get("/reviews")).andExpect(model().attribute("reviews", is(reviewRepository.getReviews())));
 	}
 	
-	@Test //fail
+	@Test //fail Donny is looking into why I am getting these fails.
 	public void getReviewShouldReturnReviewsView() throws Exception {
 		mvc.perform(get("/reviews/12")).andExpect(view().name(is(equalTo("review"))));
 	}

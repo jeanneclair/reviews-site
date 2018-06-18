@@ -1,5 +1,7 @@
 package org.wecancodeit.reviewssite;
 
+import java.awt.List;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
@@ -15,10 +17,12 @@ public class ReviewRepository {
 		Review reviewOne = new Review(111L, "The Flash", "/images/TheFlash.jpg", "Superhero", "Great show to watch with the kids.");
 		Review reviewTwo = new Review(222L, "Ronja, the Robber's Daughter", "/images/Ronja.jpg", "Anime", "My 7-year old son loves it.");
 		Review reviewThree = new Review(333L, "The Office", "/images/TheOffice.jpg", "Comedy", "I like to decompress to weird humor.");
+		Review reviewFour = new Review(444L, "The Handmaid's Tale", "/images/TheHandmaidsTale.jpg", "Drama", "Based on the Margaret Atwood novel by the same name.");
 		
 		this.addReview(reviewOne);
 		this.addReview(reviewTwo);
 		this.addReview(reviewThree);
+		this.addReview(reviewFour);
 	}
 		
 
@@ -43,7 +47,7 @@ public class ReviewRepository {
 	public Collection<Review> getReviews() {
 		return reviewRepository.values();
 	}
-
+	
 
 	public Review findById(long l) {
 		

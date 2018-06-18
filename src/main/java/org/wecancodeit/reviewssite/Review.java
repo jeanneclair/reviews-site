@@ -1,5 +1,10 @@
 package org.wecancodeit.reviewssite;
 
+//import java.util.ArrayList;
+//import java.util.Collection;
+
+//Got stuck trying to add tags.
+
 public class Review {
 	
 	private long id;
@@ -7,6 +12,7 @@ public class Review {
 	private String imgUrl;
 	private String category;
 	private String content;
+//	private Collection<String> tags;
 	
 	
 	public Review(long id, String title, String imgUrl, String category, String content) {
@@ -16,6 +22,7 @@ public class Review {
 		this.imgUrl = imgUrl;
 		this.category = category;
 		this.content = content;
+//		this.tags = tags;
 	}
 
 	public long getId() {
@@ -37,7 +44,12 @@ public class Review {
 	public String getContent() {
 		return content;
 	}
+
+//	public Collection<String> getTags() {
+//		return tags;
+//	}
+
 	
-	
+
 
 }
